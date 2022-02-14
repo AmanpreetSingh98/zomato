@@ -1,0 +1,26 @@
+#bg-gradient{
+    overflow: hidden;
+    overflow-x:hidden
+}
+.h-fix{
+    height:200px;
+    filter:drop-shadow(0px 0px 5px grey);
+    transition:.5s;
+    object-fit: cover;
+}
+.h-fix:hover{
+   transform:scale(1.2,1.2)
+}
+.card{
+    box-shadow: 0px 0px 5px black;
+}
+.black{
+    width:100%;
+    color:white;
+    text-shadow:0px 2px 5px black;
+    position:absolute;
+    padding:10px 13px;
+    bottom:0;
+    background: linear-gradient(180deg, transparent, black)
+}
+

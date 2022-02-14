@@ -1,0 +1,97 @@
+body{
+    background-color:aliceblue;
+}
+.scroll-on{
+    overflow:hidden
+}
+#logo-circle{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color: white;
+    text-align:center;
+    box-shadow:0px 5px 5px black;
+    margin-left:10px;
+    text-decoration: none;
+}
+.logo-word{
+    font-family:Nec;
+    font-size:30px;
+    line-height:1.6;
+    animation:flow 3s infinite;  
+}
+@keyframes flow {
+    0%{color:red}
+    33%{color:navy}
+    100%{color:red}
+}
+.nav-white{
+    background-color: rgb(155 155 155 / 55%) !important ;
+}
+nav{
+    z-index:5 !important;
+    transition: 0.2s;
+    background-color:rgb(5 0 0 / 43%);
+}
+.nav-link{
+    width:130px;
+    font-family: kabrio;
+    font-size:23px;
+    letter-spacing:1px;
+    text-shadow: 3px 3px 5px rgb(43, 42, 42);
+}
+.count{
+    font-family: Cambria;
+}
+.cart-hfix{
+    margin-top:-5px
+}
+.cart-icon{
+    position: absolute;
+    margin-top: -43px;
+    margin-left: 18px;
+    text-align: center;
+    background: ghostwhite;
+    text-shadow: none;
+    color: black;
+    height: 17px;
+    line-height: .99;
+    width: 17px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: monospace;
+}
+#line{
+    color:white;
+    font-size: 25px;
+    margin-right:7%;
+}
+.bi-person-plus{
+    margin-right:5px;
+}
+.fadeit{
+    position:fixed;
+    background-color:rgb(0 0 0 / 71%);;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vmax;
+    z-index:4;
+}
+@media (max-width:575px) {
+    #line{
+        display: none;
+    }
+    .navbar{
+        padding-top:0.5rem !important;
+        padding-bottom:0.5rem !important;
+    }
+    .nav-link{
+        margin-left:4%;
+    }
+    .navbar-toggler{
+        font-size: 15px;
+    }
+    
+}

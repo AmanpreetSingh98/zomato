@@ -1,0 +1,18 @@
+#bg-fix-img{
+    height:100px;
+    background-image:linear-gradient(rgba(141, 141, 141, 0.021),rgba(117, 117, 117, 0.274)),url('https://i.ibb.co/v41PGdY/c1.jpg');
+    background-size: 100% 100%;
+    background-attachment:fixed;
+    padding-top:30px;
+    box-shadow: inset 0px -2px 5px #000000a1;
+}
+#quick-head{
+    margin:auto;
+    color:white;
+    font-weight: bold;
+    font-size:30px;
+    font-family:kabrio;
+    text-align: center;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);    
+}
+

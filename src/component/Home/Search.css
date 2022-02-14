@@ -1,0 +1,59 @@
+@font-face{
+    font-family:"Monice";
+    src:url('MoniceDemoBold.ttf');
+}
+@font-face{
+    font-family:"kabrio";
+    src:url('Kabrio-Abarth-Regular-trial.ttf');
+}
+@font-face{
+    font-family:"Nec";
+    src:url('Nectarine DEMO.otf');
+}
+#bg-img{
+    margin-top:1px;
+    position:relative;
+    height:500px;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.329),rgba(0, 0, 0, 0.253)), url('https://i.ibb.co/TLVY1p3/Optimized-food5.jpg');
+    background-repeat: no-repeat;
+    box-shadow:0px 5px 10px black;
+    background-size: cover;
+}
+#bts-wrapper{
+    position:relative;
+    top:145px;
+}
+#brand-name{
+    color:white;
+    letter-spacing:5px !important;
+    font-size:70px;
+    font-family: Monice;
+    text-align:center;
+    letter-spacing:2px;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    margin-bottom:0px;
+}
+#best-place{
+    color:white;
+    font-size:30px;   
+}
+.loc-icon{
+    font-size:20px;
+    color:red;
+    background-color: white;
+    border-right:0px;
+    padding-right:2px
+}
+.border-fix{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right:none
+}
+.border-fx{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.border-fix:focus {
+    box-shadow: 4px 0px 5px rgb(49 53 58 / 40%) !important;
+}

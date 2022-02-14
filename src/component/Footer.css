@@ -1,0 +1,27 @@
+footer{
+    background-color: rgb(226 226 226);
+    border-top: 5px solid goldenrod
+}
+.foot-wrap{
+    display: flex;
+    flex-direction: column;
+}
+.zomato{
+    width:100%;
+}
+.brand-link{
+    text-decoration: none;
+}
+.brand-text{
+    font-family:Kabrio;
+    color:#421f1f;
+    font-size:30px;
+    font-weight:bold;
+}
+.brand-text :hover{
+    color:#320000
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+}

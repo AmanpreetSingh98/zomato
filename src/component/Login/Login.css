@@ -1,0 +1,13 @@
+.adj{
+    height: 100vh;
+    margin-bottom: -227px;
+}
+.border-top-green{
+    border-top: 5px solid green;
+    border-top-right-radius: 11px;
+    border-top-left-radius: 11px;
+}
+.font-cstm{
+    font-family: 'kabrio';
+    font-size: 16px;
+}
