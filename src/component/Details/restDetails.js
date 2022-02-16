@@ -27,8 +27,15 @@ class Details extends Component {
     }
 
     proceed = () => {
-        localStorage.setItem('restname',this.state.details.restaurant_name)
-        this.props.history.push(`/placeOrder/${this.state.details.restaurant_name}`)
+        var item = localStorage.getItem('ccount')
+        if(item == 0){
+            alert('Add items')
+        }
+        else{
+            localStorage.setItem('restname',this.state.details.restaurant_name)
+            this.props.history.push(`/placeOrder/${this.state.details.restaurant_name}`)
+        }
+        
     }
 
     getImage = (details) => {
