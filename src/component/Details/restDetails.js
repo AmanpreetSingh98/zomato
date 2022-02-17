@@ -27,8 +27,8 @@ class Details extends Component {
     }
 
     proceed = () => {
-        var item = localStorage.getItem('ccount')
-        if(item == 0){
+        console.log(this.state.userItem)
+        if(this.state.userItem < 1 && localStorage.getItem('ccount') < 1){
             alert('Add items')
         }
         else{

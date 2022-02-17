@@ -16,7 +16,6 @@ class Login extends Component {
     }
 
     handleSubmit = () => {
-        console.log(this.state)
         fetch(loginurl,{
             method:'POST',
             headers:{
@@ -53,7 +52,6 @@ class Login extends Component {
         }
     }
     render(){
-        console.log(this.state)
         return(
             <>
                 <Header/>
