@@ -34,7 +34,7 @@ class Header extends Component {
                     <p id="line">|</p>
                     <Link to="/" className="nav-link active" onClick={this.handleLogout}>Logout</Link>
                     <Link to={`/placeOrder/${localStorage.getItem('restname')}`} className='nav-link active'>
-                        <i className='bi bi-cart3 fs-3 count'>
+                        <i className='bi bi-cart3 fs-4 count'>
                             <div className='cart-icon'>{localStorage.getItem('ccount')?localStorage.getItem('ccount'):'0'}</div>
                         </i>
                     </Link>
@@ -49,7 +49,7 @@ class Header extends Component {
                     <p id="line">|</p>
                     <Link to="/register" className="nav-link active"><i className='bi bi-person-plus'></i>Signup</Link>
                     <Link to={`/placeOrder/${localStorage.getItem('restname')}`} className='nav-link active cart-hfix'>
-                        <i className='bi bi-cart3 fs-3 count'>
+                        <i className='bi bi-cart3 fs-4 count'>
                             <div className='cart-icon'>{localStorage.getItem('ccount')?localStorage.getItem('ccount'):'0'}</div>
                         </i>
                     </Link>
@@ -61,15 +61,10 @@ class Header extends Component {
     changenav = () => {
         if(document.documentElement.scrollTop > 35){
             document.getElementsByClassName('navbar')[0].style.backgroundColor='black';
-            document.getElementsByClassName('navbar')[0].style.paddingBottom='0px';
-            document.getElementsByClassName('navbar')[0].style.paddingTop='0px';
             document.getElementsByClassName('navbar-nav')[0].style.transform='scale(0.9)';
             document.getElementById('logo-circle').style.transform='scale(0.9)';
         }
         else{
-            document.getElementsByClassName('navbar')[0].style.backgroundColor='rgb(5 0 0 / 43%)';
-            document.getElementsByClassName('navbar')[0].style.paddingBottom='0.5rem';
-            document.getElementsByClassName('navbar')[0].style.paddingTop='0.5rem';
             document.getElementsByClassName('navbar-nav')[0].style.transform='scale(1)';
             document.getElementById('logo-circle').style.transform='scale(1)';
         }
@@ -84,7 +79,7 @@ class Header extends Component {
         return(
             <header>
                 {window.onscroll=(this.changenav)}
-                <nav className="navbar navbar-expand-sm navbar-dark position-fixed" style={{width:'100%'}}>
+                <nav className="navbar navbar-expand-sm navbar-dark position-fixed py-0" style={{width:'100%'}}>
                     <div className="container">
                         <Link to="/" id="logo-circle">
                             <span className="logo-word">Z</span>
@@ -100,6 +95,7 @@ class Header extends Component {
                         </div>
                     </div>
                 </nav>
+                
                 <div id="fade-screen"></div>
             </header>
     )}

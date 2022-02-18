@@ -5,8 +5,8 @@ body{
     overflow:hidden
 }
 #logo-circle{
-    width:40px;
-    height:40px;
+    width:35px;
+    height:35px;
     border-radius:50%;
     background-color: white;
     text-align:center;
@@ -16,7 +16,7 @@ body{
 }
 .logo-word{
     font-family:Nec;
-    font-size:30px;
+    font-size:27px;
     line-height:1.6;
     animation:flow 3s infinite;  
 }
@@ -25,18 +25,22 @@ body{
     33%{color:navy}
     100%{color:red}
 }
+.navbar{
+    top:0
+}
 .nav-white{
     background-color: rgb(155 155 155 / 55%) !important ;
 }
 nav{
     z-index:5 !important;
     transition: 0.2s;
-    background-color:rgb(5 0 0 / 43%);
+    /* background-color:rgb(5 0 0 / 43%); */
+    background-color: black;
 }
 .nav-link{
     width:130px;
     font-family: kabrio;
-    font-size:23px;
+    font-size:21px;
     letter-spacing:1px;
     text-shadow: 3px 3px 5px rgb(43, 42, 42);
 }
@@ -44,19 +48,20 @@ nav{
     font-family: Cambria;
 }
 .cart-hfix{
-    margin-top:-5px
+    margin-top:-3px
 }
 .cart-icon{
     position: absolute;
     margin-top: -43px;
+    display: flex;
+    justify-content: center;
     margin-left: 18px;
-    text-align: center;
+    align-items: center;
     background: ghostwhite;
     text-shadow: none;
     color: black;
-    height: 17px;
-    line-height: .99;
-    width: 17px;
+    height: 16px;
+    width: 16px;
     border-radius: 10px;
     font-size: 17px;
     font-weight: bold;

@@ -10,4 +10,6 @@
 .font-cstm{
     font-family: 'kabrio';
     font-size: 16px;
+    transition:.5s;
 }
+

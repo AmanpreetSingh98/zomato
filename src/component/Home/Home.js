@@ -6,7 +6,7 @@ import Header from '../Header';
 const Home = () => {
     return(
         <div>
-            <Header/>
+            <Header homeHeader={1}/>
             <Search/>
             <QuickSearch/>
         </div>
